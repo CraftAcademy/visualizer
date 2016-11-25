@@ -1,0 +1,21 @@
+.row
+  - if @account_summaries
+    %ul
+      - @account_summaries.items.each do |item|
+        %li
+          = item.name
+          (#{item.id})
+          %ul
+            - item.web_properties.each do |property|
+              %li
+                = property.name
+                = "(#{property.id})"
+                %ul
+                  - property.profiles.each do |profile|
+                    %li
+                      =  link_to profile.name, get_data_path(profile.id)
+                      (#{profile.id})
+
+.row
+  - if @data
+    = @data.inspect

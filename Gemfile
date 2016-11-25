@@ -10,7 +10,14 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 
+gem 'foundation-rails'
+gem 'foundation-icons-sass-rails'
+gem 'haml-rails'
+
+gem 'google-api-client', '~> 0.9.20', require: 'google/apis/analytics_v3'
+
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'pry'
   gem 'rspec-rails'
   gem 'shoulda-matchers'

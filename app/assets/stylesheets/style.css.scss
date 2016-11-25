@@ -1,0 +1,242 @@
+/*General*/
+
+body {
+  font-family: Quicksand;
+
+}
+
+.top-bar, .top-bar-left ul, li {
+  background-color:  #E67526;
+}
+
+.top-bar, .top-bar-left a, .top-bar-right a{
+  color: white;
+}
+
+.button {
+  &.hollow.secondary {
+    &:hover, &:focus {
+      border-color: #F78536;
+      color: #fff;
+    }
+
+  }
+  &:hover, &:focus {
+    border-color: #E67526;
+    color: #fff;
+    background-color: #E67526;
+
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Quicksand;
+
+}
+
+.display-table {
+  display: table;
+
+}
+
+.va-align {
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+/*General*/
+
+.intro {
+  background: url("https://developers.google.com/analytics/images/md_reporting.svg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 700px;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  background-position: bottom center;
+
+}
+
+/* About */
+
+.about {
+  background-color: #fff;
+  text-align: center;
+  margin: 40px;
+
+}
+
+/* About */
+
+/* Colors */
+
+.orange {
+  color: #F78536;
+
+}
+
+.light-blue-grey {
+  color: #DFEBED;
+
+}
+
+.blue {
+  color: #497285;
+
+}
+
+.dark-blue {
+  color: #2B4450;
+
+}
+
+.orange-bg {
+  background-color: #F78536;
+
+}
+
+.light-blue-grey-bg {
+  background-color: #DFEBED;
+
+}
+
+.blue-bg {
+  background-color: #497285;
+
+}
+
+.dark-blue-bg {
+  background-color: #2B4450;
+
+}
+
+/*Colors*/
+
+/*Team*/
+
+.team {
+  background-color: #fff;
+  margin: 40px;
+
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 16px;
+  img {
+    margin-bottom: 30px;
+
+  }
+  h5 {
+    color: #F78536;
+
+  }
+  p {
+    font-weight: 300;
+
+  }
+}
+
+/*Team*/
+
+/* Info Section */
+
+.info {
+  background-color: #2B4450;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+}
+
+/* Info Section */
+
+/*Blog */
+
+.blog {
+  background-color: #fff;
+  margin: 30px;
+  .label {
+    margin-bottom: 5px;
+
+  }
+}
+
+.blog-item {
+  margin-bottom: 10px;
+  img {
+    margin-bottom: 10px;
+
+  }
+  h5 {
+    color: #497285;
+
+  }
+}
+
+/*Blog */
+
+/* Subscribe */
+
+.subscribe {
+  background-color: #497285;
+  color: #fff;
+  min-height: 100px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+/* Subscribe */
+
+/*Map*/
+
+.map {
+  background-color: #F78536;
+  color: #fff;
+  min-height: 50px;
+  padding: 10px;
+  text-align: center;
+
+}
+
+/* Map */
+
+/* Contact */
+
+.contact {
+  background-image: url("https://developers.google.com/analytics/images/md_reporting.svg");
+  background-position: center center;
+  min-height: 200px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+
+}
+
+/* Contact */
+
+/*Footer */
+
+.footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.footer-social i {
+  color: #497285;
+  margin-left: 20px;
+  font-size: 22px;
+  &:hover {
+    color: #F78536;
+
+  }
+}
+
+/*Footer */
