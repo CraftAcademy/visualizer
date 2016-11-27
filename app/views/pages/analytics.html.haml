@@ -3,21 +3,21 @@
     %h3
     Properties for
     = @account_summaries.username
-    %ul
+    %ul.list
       - @account_summaries.items.each do |item|
-        %li
+        %li.account-name
           = item.name
           (#{item.id})
           - if item.web_properties
-            %ul
+            %ul.list
               - item.web_properties.each do |property|
-                %li
+                %li.property-name
                   = property.name
                   = "(#{property.id})"
                   - if property.profiles
-                    %ul
+                    %ul.list
                       - property.profiles.each do |profile|
-                        %li
+                        %li.property-profile
                           =  link_to profile.name, get_data_path(account_id: item.id, web_property_id: property.id, profile_id: profile.id), method: :get
                           (#{profile.id})
 
