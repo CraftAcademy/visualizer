@@ -8,16 +8,18 @@
         %li
           = item.name
           (#{item.id})
-          %ul
-            - item.web_properties.each do |property|
-              %li
-                = property.name
-                = "(#{property.id})"
-                %ul
-                  - property.profiles.each do |profile|
-                    %li
-                      =  link_to profile.name, get_data_path(account_id: item.id, web_property_id: property.id, profile_id: profile.id), method: :get
-                      (#{profile.id})
+          - if item.web_properties
+            %ul
+              - item.web_properties.each do |property|
+                %li
+                  = property.name
+                  = "(#{property.id})"
+                  - if property.profiles
+                    %ul
+                      - property.profiles.each do |profile|
+                        %li
+                          =  link_to profile.name, get_data_path(account_id: item.id, web_property_id: property.id, profile_id: profile.id), method: :get
+                          (#{profile.id})
 
 .row
   - if @image
