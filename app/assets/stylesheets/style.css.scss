@@ -5,7 +5,7 @@ body {
 
 }
 
-.top-bar, .top-bar-left ul, li {
+.top-bar, .top-bar-left ul, .top-bar ul, li {
   background-color:  #E67526;
 }
 
@@ -32,6 +32,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Quicksand;
 
+}
+li, li a, li a:visited, li a:hover, li a :active {
+  background: none;
 }
 
 .display-table {
@@ -62,8 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .row {
   max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 1rem auto 1rem auto;}
   .row::before, .row::after {
     content: ' ';
     display: table; }
