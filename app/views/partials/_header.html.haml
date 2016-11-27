@@ -1,7 +1,7 @@
 .top-bar
   .top-bar-left
     %ul.dropdown.menu{data:{dropdown: {menu: ''}}}
-      %li.menu-text Visualizer
+      %li.menu-text= link_to 'Visualizer', root_path, style: 'padding: 0rem 0rem;'
       %li
         = link_to 'Pricing', '#'
       %li
@@ -9,7 +9,7 @@
   .top-bar-right
     %ul.menu
       %li
-        = link_to 'GET STARTED', '#'
+        = link_to 'GET STARTED', setup_path
 
 
 

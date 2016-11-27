@@ -1,70 +1,75 @@
-.intro
-  .row
-    .large-12.columns
-      %div{style: 'background-color:rgba(0,0,0,0.4); min-height:100%; width:100%;'}
-        .display-table{style: 'height:600px; width:100%;'}
-          .va-align
-            %div
-              Know | Your | Traffic
-            %br/
-            %h2 Analytics Visualizer
-            %br/
-            %br/
-            %button.orange-bg.button GET STARTED
+-#.intro
+-#  .row
+-#    .large-12.columns
+-#      %div{style: 'background-color:rgba(0,0,0,0.4); min-height:100%; width:100%;'}
+-#        .display-table{style: 'height:600px; width:100%;'}
+-#          .va-align
+-#            %div
+-#              Know | Your | Traffic
+-#            %br/
+-#            %h2 Analytics Visualizer
+-#            %br/
+-#            %br/
+-#            %button.orange-bg.button GET STARTED
 .about
   .row
     .large-12.columns
       %h3
-        About
+        Google Analytics
         %span.orange
           %b VISUALIZER
-      Get comprehensive reports about your website traffic sent out to you on a weekly or monthly basis - for free!
+      %h6
+        Analytic insights about your website traffic straight to you inbox -
+        %span
+          %strong for free!
 .info
   .row
     .large-12.columns
       %h4 Check out the best that Analytics Visualizer has to offer
-      %h6 How can increased insights help you make better decisions.
+      %h6 How can increased insights help you make better decisions?
       = link_to 'CONNECT ACCOUNT', setup_path, class: 'orange-bg button'
 .team
   %h3.text-center
     Subscription
     %span.orange
-      %b OPTIONS
+      %strong OPTIONS
+  %h4.text-center.orange
+    %strong Work In Progress - coming in January 2017
   .row
     .medium-4.large-4.columns
       .team-member
-        =  image_tag 'report-icon.png'
+        = image_tag 'report-icon.png'
         %div
           %h5 Monthly
           %p FREE!
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Free monthly insights report delivered to your inbox.
     .medium-4.large-4.columns
       .team-member
-        =  image_tag 'report-icon.png'
+        = image_tag 'report-icon.png'
         %div
           %h5 Weekly
           %p 5 USD/month
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Weekly insights report delivered to your inbox or pushed out to your Slack channel.
     .medium-4.large-4.columns
       .team-member
-        =  image_tag 'report-icon.png'
+        = image_tag 'report-icon.png'
         %div
           %h5 Daily
           %p 15 USD/month
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Daily insights report delivered to your inbox or pushed out to your Slack channel.
 .subscribe
   .row
     .large-12.columns
-      %h4 Stay Updated
+      %h4 Sign up for Beta account
+      %p
+        We are currently in development and will be pushing oout new features throughout December 2016.
+        If you sign up before the official launch of the
+        %span.orange
+          %strong VISUALIZER
+        you'll get our Weekly insights reports for
+        %span.orange
+          %strong FREE
+        until June 2017.
       .row.small-uncollapse.large-collapse
         .large-11.columns
           %input{placeholder: 'Your Email', type: 'text'}/

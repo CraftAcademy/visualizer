@@ -1,5 +1,8 @@
 class PagesController < ApplicationController
+  include ReportGenerator
+
   before_action :get_service, only: [:analytics, :get_data]
+
   def index
   end
 
@@ -32,13 +35,10 @@ class PagesController < ApplicationController
   end
 
   def get_data
-    profile_id = "ga:#{params[:profile_id]}"
-    start_date = Date.today.beginning_of_week.strftime('%F')
-    end_date = Date.today.end_of_week.strftime('%F')
-    metrics = 'ga:sessions,ga:uniquePageviews'
-    @data = @service.get_ga_data(profile_id, start_date, end_date, metrics, {
-        dimensions: 'ga:date'
-    }).rows
+    @property = @service.get_web_property(params[:account_id],
+                                   params[:web_property_id])
+
+    @image = ReportGenerator.generate(@service, params, @property)
     render :analytics
   end
 

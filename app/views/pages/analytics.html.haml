@@ -1,5 +1,8 @@
 .row
   - if @account_summaries
+    %h3
+    Properties for
+    = @account_summaries.username
     %ul
       - @account_summaries.items.each do |item|
         %li
@@ -13,9 +16,11 @@
                 %ul
                   - property.profiles.each do |profile|
                     %li
-                      =  link_to profile.name, get_data_path(profile.id)
+                      =  link_to profile.name, get_data_path(account_id: item.id, web_property_id: property.id, profile_id: profile.id), method: :get
                       (#{profile.id})
 
 .row
-  - if @data
-    = @data.inspect
+  - if @image
+    %h3
+      = @property.name
+    = image_tag @image

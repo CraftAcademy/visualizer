@@ -15,6 +15,8 @@ gem 'foundation-icons-sass-rails'
 gem 'haml-rails'
 
 gem 'google-api-client', '~> 0.9.20', require: 'google/apis/analytics_v3'
+gem 'rmagick', require: 'rmagick'
+gem 'gruff'
 
 group :development, :test do
   gem 'dotenv-rails'

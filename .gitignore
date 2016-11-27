@@ -13,8 +13,15 @@
 !/log/.keep
 !/tmp/.keep
 .idea
+.DS_Store
+public/tmp/*.png
+
 npm-debug.log
 
 # Env variables
 .env
+
+# Ignore generated image files during development
+
+app/assets/images/data_*
 

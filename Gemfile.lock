@@ -125,6 +125,8 @@ GEM
       multi_json (~> 1.11)
       os (~> 0.9)
       signet (~> 0.7)
+    gruff (0.7.0)
+      rmagick (~> 2.13, >= 2.13.4)
     guard (2.14.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -247,6 +249,7 @@ GEM
     representable (2.3.0)
       uber (~> 0.0.7)
     retriable (2.1.0)
+    rmagick (2.16.0)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -339,6 +342,7 @@ DEPENDENCIES
   foundation-icons-sass-rails
   foundation-rails
   google-api-client (~> 0.9.20)
+  gruff
   guard-cucumber
   guard-livereload
   guard-rspec
@@ -352,6 +356,7 @@ DEPENDENCIES
   pry
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
+  rmagick
   rspec-rails
   sass-rails (~> 5.0)
   shoulda-matchers
