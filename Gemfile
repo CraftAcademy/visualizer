@@ -15,6 +15,7 @@ gem 'foundation-icons-sass-rails'
 gem 'haml-rails'
 
 gem 'google-api-client', '~> 0.9.20', require: 'google/apis/analytics_v3'
+gem 'mailchimp-api', require: 'mailchimp'
 gem 'rmagick', require: 'rmagick'
 gem 'gruff'
 
@@ -35,6 +36,7 @@ group :development, :test do
   gem 'poltergeist'
   gem 'phantomjs', require: 'phantomjs/poltergeist'
   gem 'timecop'
+  gem 'awesome_print', require: 'awesome_print'
 end
 
 group :development do

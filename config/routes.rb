@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
+
   get 'setup', controller: :pages, action: :redirect
   get 'callback', controller: :pages, action: :callback
   get 'analytics', controller: :pages, action: :analytics
   get 'get_data', controller: :pages, action: :get_data, as: :get_data
+
+  post :subscribe, controller: :subscriptions, action: :subscribe
 
   root controller: :pages, action: :index
 
