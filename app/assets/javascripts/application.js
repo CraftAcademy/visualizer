@@ -24,7 +24,27 @@
 //                                                                  |___/
 //
 
+$(document).ready(function () {
+    $(function () {
+        $(document).foundation();
+    });
 
-$(function () {
-    $(document).foundation();
+
+    $('#subscribe').click(function () {
+        var email = $('#email').val();
+        $.ajax({
+                url: '/subscribe',
+                type: 'post',
+                dataType: 'json',
+                data: {email: email}
+            })
+            .done(function (data) {
+                console.log(data.message);
+                $('.subscribe').html('<strong>' + data.message + '</strong>');
+            })
+            .fail(function (data) {
+                $('.subscribe').append('<strong>' + data.responseJSON.message + '</strong>');
+            });
+    });
 });
+

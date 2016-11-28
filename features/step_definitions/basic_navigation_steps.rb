@@ -9,3 +9,7 @@ end
 Then(/^show me the page$/) do
   save_and_open_page
 end
+
+And(/^I fill in "([^"]*)" with "([^"]*)"$/) do |element, value|
+  fill_in element, with: value
+end
