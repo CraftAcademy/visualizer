@@ -24,7 +24,7 @@
 //                                                                  |___/
 //
 
-$(document).ready(function () {
+document.addEventListener("turbolinks:load", function() {
     $(function () {
         $(document).foundation();
     });
@@ -47,4 +47,3 @@ $(document).ready(function () {
             });
     });
 });
-
